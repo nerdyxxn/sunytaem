@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-weight: 700;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/naver/NanumMyeongjoEB.woff2) format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-weight: 500;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/naver/NanumMyeongjoB.woff2) format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/naver/NanumMyeongjo.woff2) format('woff2');
+  font-display: swap;
+}
+
+body {
+  font-family: 'NanumMyeongjo';
+  font-weight: 400;
+}
+.container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ecdcd9;
+}
+.suny-bg {
+  overflow-x: hidden;
+  /* width: 480px; */
+  margin: 0 auto !important;
+}
+.suny-bg .contents {
+  display: flex;
+  flex-flow: column nowrap;
+}
+/* 메인 사진 */
+.section-cover {
+  height: 637px;
+}
+.section-cover img {
+  width: 100%;
+}
+/* 문구 */
+.section-poem {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://cdn.imweb.me/thumbnail/20240309/16438ff94356d.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.poem-text {
+  font-size: 15px;
+  color: rgb(117, 117, 117);
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 50px;
+}
+.poem-text p {
+  padding-bottom: 15px;
+}
+/* 중간 사진 */
+.section-cover-sub {
+  height: 290px;
+}
+.section-cover-sub img {
+  width: 100%;
+}
+/* 초대 */
+.section-invitation {
+  width: 100%;
+  height: 690px;
+  background-image: url(https://cdn.imweb.me/thumbnail/20240309/4c5688cae2972.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.invitation-title {
+  text-align: center;
+  margin-top: 30px;
+}
+.invitation-text {
+  font-size: 15px;
+  color: #2b2b2b;
+  text-align: center;
+  margin-top: 64px;
+}
+.invitation-text p {
+  padding-bottom: 15px;
+}
+.invitation-name {
+  text-align: center;
+  border-top: 1px solid #e6ded6;
+  border-bottom: 1px solid #e6ded6;
+  line-height: 2.5;
+}
+.name-wrap {
+  padding: 18px 16px;
+}
+.invitation-btn {
+  width: 92px;
+  height: 32px;
+  background-color: #e6ded6;
+  border-color: #e6ded6;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.invitation-btn .btn {
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 20px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+/* 캘린더 */
+.section-calendar {
+  width: 100%;
+  height: 796px;
+  background-image: url(https://cdn.imweb.me/thumbnail/20240309/56490c0c97616.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calendar-img {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.img-wrap {
+  position: relative;
+  height: 270px;
+}
+.img-wrap img {
+  width: 156.5px;
+  aspect-ratio: auto 156.5 / 286;
+  height: 286px;
+  object-fit: cover;
+}
+.img-wrap .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+/* 달력 */
+.group_cal {
+  padding-top: 48px;
+}
+.group_cal .cal_title {
+  padding: 0 5%;
+  letter-spacing: 0.2em;
+  line-height: 1.6;
+  font-weight: bold;
+}
+.group_cal .cal_month {
+  padding-bottom: 20px;
+}
+.group_cal .cal_width {
+  width: 308px;
+}
+.group_cal .cal_grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+.group_cal .cell {
+  width: 14.285%;
+}
+.group_cal .w0 .txt {
+  color: #b67171;
+}
+.group_cal .cal_weeks .cal_grid {
+  padding: 8px 0;
+  margin-bottom: 6px;
+}
+.group_cal .cal_weeks {
+  border-bottom: 1px solid #dad2c9;
+  margin-bottom: 16px;
+  padding-top: 9px;
+}
+.group_cal .cal_days .cell {
+  height: 39px;
+}
+.group_cal .cal_days .cell > .bg {
+  text-align: center;
+  top: 7px;
+}
+.group_cal .cal_days .cell .circle {
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+.group_cal .cal_days .cell .circle.bg {
+  background-color: #efb8b8;
+}
+.group_cal .cal_days .cell .circle.line {
+  border: 1px solid #c79c9c;
+}
+.group_cal .cal_days .cell.seled > .dayNum {
+  height: inherit;
+  color: #fff;
+}
+.group_cal .cal_days .cell .bg .txt {
+  margin-top: 2px;
+  color: #b67171;
+  white-space: nowrap;
+  zoom: 0.8;
+  -moz-transform: scale(0.8);
+}
+.group_cal .cal_days .cell > .dayNum {
+  height: inherit;
+}
+.group_cal .cal_days .cell > .dayNum > .txt {
+  z-index: 10;
+}
+.group_dday {
+  padding: 8px 10px;
+  padding-top: 40px;
+}
+.group_dday > div {
+  max-width: 380px;
+}
+.group_dday .txt {
+  line-height: 1.8;
+}
+.group_dday .dday_heart {
+  color: #f1b6b6;
+}
+.group_dday .dday_number {
+  color: #d27979;
+}
+.fontS {
+  font-size: 12px;
+}
+.fontL {
+  font-size: 18px;
+}
+.prdFont {
+  word-break: break-word;
+  line-height: 1.2;
+  color: #2c2b2b;
+}
+.fontN-1 {
+  font-size: 15px;
+}
+.fontN-2 {
+  font-size: 13px;
+}
+.fit_center {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.putOnBg_container {
+  width: 100%;
+  position: relative;
+}
+.group_cal .cal_days .cell > .bg {
+  text-align: center;
+  top: 7px;
+}
+.putOnBg_container > div {
+  position: absolute;
+}
+.putOnBg_container > .column1 {
+  width: 100%;
+}
+.putOnBg_container > div:first-child {
+  left: 0;
+}
+.putOnBg_container > div:last-child {
+  right: 0;
+}
+.centerXY {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.group_cal .cell.seled .txt {
+  color: #fff;
+}
+/* 갤러리 */
+/* 스토리 */
+/* 위치 */
+
+@media screen and (min-width: 480px) {
+  .suny-bg {
+    width: 480px;
+    margin: 0 auto !important;
+  }
+}
